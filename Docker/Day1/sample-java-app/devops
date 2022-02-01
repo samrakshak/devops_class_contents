@@ -1,0 +1,10 @@
+FROM java:8
+WORKDIR /app
+COPY . /app
+RUN mkdir karna
+RUN cd karna
+RUN echo "Hello devops" >> karna.txt
+RUN pwd
+RUN ls
+RUN javac hello.java
+CMD java Hello
